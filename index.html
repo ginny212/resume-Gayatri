@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gayatri Kamdar | GK_OS Portfolio</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Gayatri Kamdar - Product-minded Operator, Expansion Strategist, and Data Scientist. GK_OS is an interactive desktop operating system experience.">
+  <meta name="author" content="Gayatri Kamdar">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Top System Bar -->
+  <header class="system-bar" id="system-bar">
+    <div class="bar-left">
+      <span class="bar-brand" id="menu-brand">GK_OS</span>
+      <nav class="bar-nav">
+        <button class="nav-item" data-window="identity-win" id="nav-identity">Identity</button>
+        <button class="nav-item" data-window="archive-win" id="nav-archive">Archive</button>
+        <button class="nav-item" data-window="inventory-win" id="nav-inventory">Inventory</button>
+        <button class="nav-item" data-window="trace-win" id="nav-trace">Trace</button>
+        <button class="nav-item" data-window="video-win" id="nav-video">Video</button>
+      </nav>
+    </div>
+    <div class="bar-right">
+      <span class="bar-icon"><i data-lucide="wifi" class="icon-small"></i></span>
+      <span class="bar-icon"><i data-lucide="battery" class="icon-small"></i></span>
+      <span class="bar-icon"><i data-lucide="search" class="icon-small"></i></span>
+      <span class="bar-time" id="system-clock">00:00 AM</span>
+    </div>
+  </header>
+
+  <!-- Desktop Workspace -->
+  <main class="desktop" id="desktop">
+
+    <!-- 1. IDENTITY WINDOW -->
+    <div class="window active" id="identity-win" style="top: 10%; left: 8%;">
+      <div class="title-bar">
+        <div class="window-controls">
+          <span class="control-btn close" data-window="identity-win"></span>
+          <span class="control-btn minimize" data-window="identity-win"></span>
+          <span class="control-btn maximize" data-window="identity-win"></span>
+        </div>
+        <div class="title-text">IDENTITY.SYS</div>
+      </div>
+      <div class="window-content">
+        <div class="profile-layout">
+          <div class="profile-header">
+            <div class="profile-avatar">
+              <i data-lucide="user" class="avatar-icon"></i>
+            </div>
+            <div class="profile-title">
+              <h1>Gayatri Kamdar</h1>
+              <p class="subtitle">Product-minded Operator & Analyst</p>
+            </div>
+          </div>
+          <div class="profile-body">
+            <h3>Profile Summary</h3>
+            <p>Product-minded operator with experience across analytics, market research, and business strategy. Led the end-to-end development of an AI-powered roommate compatibility platform, from user research and data collection to product design and deployment. Brings a combination of analytical rigor, ownership, and execution, with experience solving unstructured problems and driving initiatives independently.</p>
+            
+            <h3>Contact Information</h3>
+            <ul class="contact-list">
+              <li>
+                <i data-lucide="phone"></i>
+                <a href="tel:+919766838744" id="contact-phone">+91 97668 38744</a>
+              </li>
+              <li>
+                <i data-lucide="mail"></i>
+                <a href="mailto:gayatrimkamdar@gmail.com" id="contact-email">gayatrimkamdar@gmail.com</a>
+              </li>
+              <li>
+                <i data-lucide="linkedin"></i>
+                <a href="https://www.linkedin.com/in/gayatri-kamdar-gk/" target="_blank" rel="noopener noreferrer" id="contact-linkedin">linkedin.com/in/gayatri-kamdar-gk</a>
+              </li>
+            </ul>
+
+            <div class="download-container">
+              <a href="gayatri_kamdar_resume.pdf" download="Gayatri_Kamdar_Resume.pdf" class="btn-download">
+                <i data-lucide="download"></i>
+                Download Resume PDF
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. TRACE (EXPERIENCE) WINDOW -->
+    <div class="window" id="trace-win" style="top: 12%; left: 22%;">
+      <div class="title-bar">
+        <div class="window-controls">
+          <span class="control-btn close" data-window="trace-win"></span>
+          <span class="control-btn minimize" data-window="trace-win"></span>
+          <span class="control-btn maximize" data-window="trace-win"></span>
+        </div>
+        <div class="title-text">PROFESSIONAL_TRACE.SYS</div>
+      </div>
+      <div class="window-content">
+        <h2 class="section-title">History</h2>
+        <div class="timeline">
+          
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-header">
+              <span class="timeline-date">2026 JUN — PRESENT</span>
+              <h3>Scale100x.ai</h3>
+              <p class="role">EXPANSION STRATEGIST</p>
+            </div>
+            <div class="timeline-body">
+              <p>Leading strategic expansion initiatives and growth operations for the AI-powered scaling platform.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-header">
+              <span class="timeline-date">2025 JAN — MAY</span>
+              <h3>Indhaan</h3>
+              <p class="role">DATA ANALYTICS INTERN</p>
+            </div>
+            <div class="timeline-body">
+              <ul>
+                <li>Built 3 financial models analyzing debt scenarios, reducing repayment time by 18% and interest cost by 12%.</li>
+                <li>Generated financial insights to improve personalized recommendations and optimize decision efficiency.</li>
+                <li>Developed user segmentation model using 4 financial variables, improving recommendation accuracy by 30%.</li>
+                <li>Worked across ambiguous business problems requiring analytical reasoning and translated findings to cross-functional stakeholders.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-header">
+              <span class="timeline-date">2024 MAY — JUL</span>
+              <h3>HRAnezi, Mumbai</h3>
+              <p class="role">MARKET RESEARCH INTERN</p>
+            </div>
+            <div class="timeline-body">
+              <ul>
+                <li>Worked closely with the Business Development (BD) team to support brand growth.</li>
+                <li>Conducted brand analysis of 7 competitors, covering positioning, messaging, pricing models, and service differentiation.</li>
+                <li>Handled large-scale Excel data (>10,000 rows) with dedicated cleaning and organization.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-header">
+              <span class="timeline-date">2024 JAN — MAY</span>
+              <h3>Salesera</h3>
+              <p class="role">MARKET RESEARCH INTERN</p>
+            </div>
+            <div class="timeline-body">
+              <ul>
+                <li>Automated Python data extraction & cleaning for lead analysis, cutting processing time by 50% and achieving 95%+ accuracy.</li>
+                <li>Identified growth opportunities from analyzed data, generating 50-100+ high-potential leads.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. INVENTORY (PROJECTS) WINDOW -->
+    <div class="window" id="inventory-win" style="top: 8%; left: 35%;">
+      <div class="title-bar">
+        <div class="window-controls">
+          <span class="control-btn close" data-window="inventory-win"></span>
+          <span class="control-btn minimize" data-window="inventory-win"></span>
+          <span class="control-btn maximize" data-window="inventory-win"></span>
+        </div>
+        <div class="title-text">INVENTORY.SYS</div>
+      </div>
+      <div class="window-content">
+        <h2 class="section-title">Projects & Skills</h2>
+        
+        <div class="project-grid">
+          
+          <div class="project-card featured">
+            <div class="project-tag">FEATURED INITIATIVE</div>
+            <h3>AI-Powered Roommate Compatibility Platform</h3>
+            <p>Designed and developed an end-to-end roommate compatibility platform addressing compatibility challenges in shared housing. Key highlights:</p>
+            <ul>
+              <li>Built a personality prediction framework leveraging NLP techniques to generate compatibility insights from user descriptions.</li>
+              <li>Developed a hybrid recommendation engine combining structured attributes, behavioral patterns, and personality signals.</li>
+              <li>Led the complete product lifecycle: research, data collection, feature prioritization, model development (K-Means + BERT), testing, and deployment.</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <h3>Tesla Stock Prediction</h3>
+            <p>Time-series forecasting with Facebook Prophet, achieving ~15% lower MAE/RMSE on historical data.</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Electronic Sales Dashboard</h3>
+            <p>Built real-time Tableau dashboards to track sales trends, performance metrics, and support data-driven business decisions.</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Wine Data Analysis</h3>
+            <p>Automated spreadsheets improving data management, validation rules, and entry accuracy in Excel.</p>
+          </div>
+
+        </div>
+
+        <h3 class="skill-title">Technical Inventory</h3>
+        <div class="skill-categories">
+          <div class="skill-category">
+            <h4>Analytics & Technical</h4>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Advanced Excel</span>
+              <span class="tag">Data Analytics</span>
+              <span class="tag">Dashboard Development</span>
+              <span class="tag">Data Visualization</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Business & Strategy</h4>
+            <div class="tags">
+              <span class="tag">Business Analysis</span>
+              <span class="tag">Market Research</span>
+              <span class="tag">Competitive Intelligence</span>
+              <span class="tag">Growth Analysis</span>
+              <span class="tag">Data Storytelling</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Core Strengths</h4>
+            <div class="tags">
+              <span class="tag">Ownership</span>
+              <span class="tag">Structured Thinking</span>
+              <span class="tag">Execution</span>
+              <span class="tag">Adaptability</span>
+              <span class="tag">Cross-Functional Collaboration</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 4. ARCHIVE (EDUCATION) WINDOW -->
+    <div class="window" id="archive-win" style="top: 15%; left: 15%;">
+      <div class="title-bar">
+        <div class="window-controls">
+          <span class="control-btn close" data-window="archive-win"></span>
+          <span class="control-btn minimize" data-window="archive-win"></span>
+          <span class="control-btn maximize" data-window="archive-win"></span>
+        </div>
+        <div class="title-text">ARCHIVE.SYS</div>
+      </div>
+      <div class="window-content">
+        <h2 class="section-title">Education & Credentials</h2>
+        
+        <div class="edu-section">
+          <div class="edu-item">
+            <div class="edu-header">
+              <h3>B.Sc. Data Science & Business Analytics</h3>
+              <span class="edu-meta">HSNC University Mumbai | 2022 — 2025</span>
+            </div>
+            <p>Science Honours Program | CGPA: 7.7/10</p>
+          </div>
+          <div class="edu-item">
+            <div class="edu-header">
+              <h3>Senior Secondary (Class XII)</h3>
+              <span class="edu-meta">Kesharbai Lahoti Mahavidyalaya | 89%</span>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-header">
+              <h3>Secondary (Class X ICSE)</h3>
+              <span class="edu-meta">Tomoae Primary English Medium School | 77.7%</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="skill-title">Certifications</h3>
+        <ul class="cert-list">
+          <li>
+            <strong>IBM AI Engineering Professional Certificate:</strong> Deploying and scaling ML/deep learning models (TensorFlow, PyTorch, Spark).
+          </li>
+          <li>
+            <strong>British Airways Data Science (Forage):</strong> Python sentiment & exploratory analysis of airline reviews.
+          </li>
+          <li>
+            <strong>Certified Data Scientist (Udemy Bootcamp):</strong> ML, cross-validation, hyperparameter tuning, data cleaning.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 5. VIDEO (CREATIVE) WINDOW -->
+    <div class="window" id="video-win" style="top: 20%; left: 30%;">
+      <div class="title-bar">
+        <div class="window-controls">
+          <span class="control-btn close" data-window="video-win"></span>
+          <span class="control-btn minimize" data-window="video-win"></span>
+          <span class="control-btn maximize" data-window="video-win"></span>
+        </div>
+        <div class="title-text">VIDEO.SYS</div>
+      </div>
+      <div class="window-content">
+        <h2 class="section-title">Media & Extracurriculars</h2>
+
+        <div class="media-container">
+          <!-- Mock Video Player Interface -->
+          <div class="mock-player">
+            <div class="player-screen">
+              <div class="play-overlay">
+                <i data-lucide="play-circle" class="play-btn-large"></i>
+                <p>Play Demo Video</p>
+              </div>
+              <div class="player-title-overlay">Roommate Compatibility Engine Showcase</div>
+            </div>
+            <div class="player-controls">
+              <button class="player-btn"><i data-lucide="play" class="icon-small"></i></button>
+              <div class="progress-bar">
+                <div class="progress-filled" style="width: 35%;"></div>
+              </div>
+              <span class="time-display">01:14 / 03:30</span>
+              <button class="player-btn"><i data-lucide="volume-2" class="icon-small"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="creative-grid">
+          <div class="creative-card">
+            <h4><i data-lucide="trophy"></i> Sports & Athleticism</h4>
+            <p>Women's Cricket Team All-rounder for HSNC University.</p>
+          </div>
+          <div class="creative-card">
+            <h4><i data-lucide="palette"></i> Design & Aesthetics</h4>
+            <p>Diploma in Interior Design. Focus on spatial layouts, ergonomics, and visual harmony.</p>
+          </div>
+          <div class="creative-card">
+            <h4><i data-lucide="music"></i> Creative Expressions</h4>
+            <p>Guitar performances & acoustic arrangements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Bottom OS Dock -->
+  <footer class="dock-container">
+    <div class="dock" id="dock">
+      <button class="dock-item active" data-window="identity-win" title="Identity">
+        <i data-lucide="user"></i>
+        <span class="tooltip">Identity</span>
+      </button>
+      <button class="dock-item" data-window="archive-win" title="Archive">
+        <i data-lucide="book-open"></i>
+        <span class="tooltip">Archive</span>
+      </button>
+      <button class="dock-item" data-window="inventory-win" title="Inventory">
+        <i data-lucide="folder-git-2"></i>
+        <span class="tooltip">Inventory</span>
+      </button>
+      <button class="dock-item" data-window="trace-win" title="Trace">
+        <i data-lucide="git-branch"></i>
+        <span class="tooltip">Trace</span>
+      </button>
+      <button class="dock-item" data-window="video-win" title="Video">
+        <i data-lucide="play"></i>
+        <span class="tooltip">Video</span>
+      </button>
+      <div class="dock-separator"></div>
+      <button class="dock-item utility" id="dock-reset" title="Reset Desktop">
+        <i data-lucide="refresh-cw"></i>
+        <span class="tooltip">Reset Desktop</span>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
