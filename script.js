@@ -21,8 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // Stacking z-index counter
   let highestZIndex = 50;
 
-  // Initial setup: open Identity window by default
-  const defaultOpenWin = document.getElementById('identity-win');
+  // Initial setup: check URL query parameters for default open window
+  const urlParams = new URLSearchParams(window.location.search);
+  const targetWinId = urlParams.get('win');
+  
+  let defaultOpenWin = document.getElementById('identity-win');
+  
+  if (targetWinId) {
+    const targetWin = document.getElementById(targetWinId);
+    if (targetWin) {
+      defaultOpenWin = targetWin;
+    }
+  }
+
   if (defaultOpenWin) {
     defaultOpenWin.classList.add('visible');
     bringToFront(defaultOpenWin);
@@ -175,6 +186,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Desktop Shortcuts click & double-click interactions
+  const shortcuts = document.querySelectorAll('.shortcut');
+  shortcuts.forEach(shortcut => {
+    const openWindow = () => {
+      const windowId = shortcut.getAttribute('data-window');
+      const targetWin = document.getElementById(windowId);
+      if (targetWin) {
+        targetWin.classList.add('visible');
+        bringToFront(targetWin);
+      }
+    };
+    
+    // Support single click for responsiveness (like mobile or user preference)
+    shortcut.addEventListener('click', (e) => {
+      e.preventDefault();
+      openWindow();
+    });
+
+    // Double-click to mimic traditional OS behavior
+    shortcut.addEventListener('dblclick', (e) => {
+      e.preventDefault();
+      openWindow();
+    });
+  });
+
   // Window Close (Red dot)
   closeBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -240,10 +276,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Default positions mapping
     const defaults = {
-      'identity-win': { top: '10%', left: '8%' },
-      'archive-win': { top: '15%', left: '15%' },
-      'inventory-win': { top: '8%', left: '35%' },
-      'trace-win': { top: '12%', left: '22%' },
+      'identity-win': { top: '10%', left: '18%' },
+      'qualifications-win': { top: '15%', left: '24%' },
+      'projects-win': { top: '8%', left: '38%' },
+      'track-record-win': { top: '12%', left: '28%' },
       'video-win': { top: '20%', left: '30%' }
     };
 
