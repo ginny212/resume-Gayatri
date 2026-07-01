@@ -24,9 +24,9 @@
       <span class="bar-brand" id="menu-brand">GK_OS</span>
       <nav class="bar-nav">
         <button class="nav-item" data-window="identity-win" id="nav-identity">Identity</button>
-        <button class="nav-item" data-window="archive-win" id="nav-archive">Archive</button>
-        <button class="nav-item" data-window="inventory-win" id="nav-inventory">Inventory</button>
-        <button class="nav-item" data-window="trace-win" id="nav-trace">Trace</button>
+        <button class="nav-item" data-window="qualifications-win" id="nav-qualifications">Qualifications</button>
+        <button class="nav-item" data-window="projects-win" id="nav-projects">Projects</button>
+        <button class="nav-item" data-window="track-record-win" id="nav-track-record">Track Record</button>
         <button class="nav-item" data-window="video-win" id="nav-video">Video</button>
       </nav>
     </div>
@@ -41,8 +41,42 @@
   <!-- Desktop Workspace -->
   <main class="desktop" id="desktop">
 
+    <!-- Desktop Shortcuts -->
+    <div class="desktop-shortcuts">
+      <div class="shortcut" data-window="identity-win">
+        <div class="shortcut-icon icon-identity">
+          <i data-lucide="user"></i>
+        </div>
+        <span class="shortcut-label">Identity.cur</span>
+      </div>
+      <div class="shortcut" data-window="qualifications-win">
+        <div class="shortcut-icon icon-qualifications">
+          <i data-lucide="book-open"></i>
+        </div>
+        <span class="shortcut-label">Qualifications.vol</span>
+      </div>
+      <div class="shortcut" data-window="projects-win">
+        <div class="shortcut-icon icon-projects">
+          <i data-lucide="folder-git-2"></i>
+        </div>
+        <span class="shortcut-label">Projects.idx</span>
+      </div>
+      <div class="shortcut" data-window="track-record-win">
+        <div class="shortcut-icon icon-track-record">
+          <i data-lucide="git-branch"></i>
+        </div>
+        <span class="shortcut-label">Track_Record.sys</span>
+      </div>
+      <div class="shortcut" data-window="video-win">
+        <div class="shortcut-icon icon-video">
+          <i data-lucide="play"></i>
+        </div>
+        <span class="shortcut-label">Intro.mov</span>
+      </div>
+    </div>
+
     <!-- 1. IDENTITY WINDOW -->
-    <div class="window active" id="identity-win" style="top: 10%; left: 8%;">
+    <div class="window active" id="identity-win" style="top: 10%; left: 18%;">
       <div class="title-bar">
         <div class="window-controls">
           <span class="control-btn close" data-window="identity-win"></span>
@@ -93,15 +127,15 @@
       </div>
     </div>
 
-    <!-- 2. TRACE (EXPERIENCE) WINDOW -->
-    <div class="window" id="trace-win" style="top: 12%; left: 22%;">
+    <!-- 2. TRACK RECORD (EXPERIENCE) WINDOW -->
+    <div class="window" id="track-record-win" style="top: 12%; left: 28%;">
       <div class="title-bar">
         <div class="window-controls">
-          <span class="control-btn close" data-window="trace-win"></span>
-          <span class="control-btn minimize" data-window="trace-win"></span>
-          <span class="control-btn maximize" data-window="trace-win"></span>
+          <span class="control-btn close" data-window="track-record-win"></span>
+          <span class="control-btn minimize" data-window="track-record-win"></span>
+          <span class="control-btn maximize" data-window="track-record-win"></span>
         </div>
-        <div class="title-text">PROFESSIONAL_TRACE.SYS</div>
+        <div class="title-text">TRACK_RECORD.SYS</div>
       </div>
       <div class="window-content">
         <h2 class="section-title">History</h2>
@@ -171,15 +205,15 @@
       </div>
     </div>
 
-    <!-- 3. INVENTORY (PROJECTS) WINDOW -->
-    <div class="window" id="inventory-win" style="top: 8%; left: 35%;">
+    <!-- 3. PROJECTS WINDOW -->
+    <div class="window" id="projects-win" style="top: 8%; left: 38%;">
       <div class="title-bar">
         <div class="window-controls">
-          <span class="control-btn close" data-window="inventory-win"></span>
-          <span class="control-btn minimize" data-window="inventory-win"></span>
-          <span class="control-btn maximize" data-window="inventory-win"></span>
+          <span class="control-btn close" data-window="projects-win"></span>
+          <span class="control-btn minimize" data-window="projects-win"></span>
+          <span class="control-btn maximize" data-window="projects-win"></span>
         </div>
-        <div class="title-text">INVENTORY.SYS</div>
+        <div class="title-text">PROJECTS.IDX</div>
       </div>
       <div class="window-content">
         <h2 class="section-title">Projects & Skills</h2>
@@ -214,7 +248,7 @@
 
         </div>
 
-        <h3 class="skill-title">Technical Inventory</h3>
+        <h3 class="skill-title">Technical Projects & Skills</h3>
         <div class="skill-categories">
           <div class="skill-category">
             <h4>Analytics & Technical</h4>
@@ -253,15 +287,15 @@
       </div>
     </div>
 
-    <!-- 4. ARCHIVE (EDUCATION) WINDOW -->
-    <div class="window" id="archive-win" style="top: 15%; left: 15%;">
+    <!-- 4. QUALIFICATIONS (EDUCATION) WINDOW -->
+    <div class="window" id="qualifications-win" style="top: 15%; left: 24%;">
       <div class="title-bar">
         <div class="window-controls">
-          <span class="control-btn close" data-window="archive-win"></span>
-          <span class="control-btn minimize" data-window="archive-win"></span>
-          <span class="control-btn maximize" data-window="archive-win"></span>
+          <span class="control-btn close" data-window="qualifications-win"></span>
+          <span class="control-btn minimize" data-window="qualifications-win"></span>
+          <span class="control-btn maximize" data-window="qualifications-win"></span>
         </div>
-        <div class="title-text">ARCHIVE.SYS</div>
+        <div class="title-text">QUALIFICATIONS.VOL</div>
       </div>
       <div class="window-content">
         <h2 class="section-title">Education & Credentials</h2>
@@ -363,17 +397,17 @@
         <i data-lucide="user"></i>
         <span class="tooltip">Identity</span>
       </button>
-      <button class="dock-item" data-window="archive-win" title="Archive">
+      <button class="dock-item" data-window="qualifications-win" title="Qualifications">
         <i data-lucide="book-open"></i>
-        <span class="tooltip">Archive</span>
+        <span class="tooltip">Qualifications</span>
       </button>
-      <button class="dock-item" data-window="inventory-win" title="Inventory">
+      <button class="dock-item" data-window="projects-win" title="Projects">
         <i data-lucide="folder-git-2"></i>
-        <span class="tooltip">Inventory</span>
+        <span class="tooltip">Projects</span>
       </button>
-      <button class="dock-item" data-window="trace-win" title="Trace">
+      <button class="dock-item" data-window="track-record-win" title="Track Record">
         <i data-lucide="git-branch"></i>
-        <span class="tooltip">Trace</span>
+        <span class="tooltip">Track Record</span>
       </button>
       <button class="dock-item" data-window="video-win" title="Video">
         <i data-lucide="play"></i>
