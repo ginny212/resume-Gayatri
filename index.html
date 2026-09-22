@@ -56,6 +56,12 @@
         </div>
         <span class="shortcut-label">Qualifications.vol</span>
       </div>
+      <div class="shortcut" data-window="research-win">
+        <div class="shortcut-icon icon-research">
+          <i data-lucide="flask-conical"></i>
+        </div>
+        <span class="shortcut-label">Research.sys</span>
+      </div>
       <div class="shortcut" data-window="projects-win">
         <div class="shortcut-icon icon-projects">
           <i data-lucide="folder-git-2"></i>
@@ -94,7 +100,7 @@
             </div>
             <div class="profile-title">
               <h1>Gayatri Kamdar</h1>
-              <p class="subtitle">Product-minded Operator & Analyst</p>
+              <p class="subtitle">Product-minded Operator &amp; Analyst</p>
             </div>
           </div>
           <div class="profile-body">
@@ -117,7 +123,17 @@
               </li>
             </ul>
 
-            <div class="download-container">
+            <h3 style="margin-top: 16px;">Featured Research</h3>
+            <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 12px 16px; margin-top: 6px;">
+              <div style="font-family: var(--font-mono); font-size: 10px; color: #0284c7; font-weight: 600; text-transform: uppercase;">Jigyaasa Science Honors Program</div>
+              <h4 style="font-size: 13.5px; font-weight: 700; color: #0f172a; margin: 4px 0 2px 0;">Rahi: Roommate Compatibility Prediction Using BERT &amp; Ensemble Learning</h4>
+              <p style="font-size: 11.5px; color: #475569; margin-bottom: 10px;">A Hybrid Approach to Personality Trait Prediction and Compatibility Classification</p>
+              <button onclick="const win = document.getElementById('research-win'); if(win){ win.classList.add('visible'); win.classList.add('active'); if(window.bringToFront) window.bringToFront(win); }" style="background: #0284c7; color: white; border: none; padding: 6px 14px; border-radius: 4px; font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+                <i data-lucide="flask-conical" style="width: 12px; height: 12px;"></i> View Full Research Paper
+              </button>
+            </div>
+
+            <div class="download-container" style="margin-top: 16px;">
               <a href="gayatri_kamdar_resume.pdf" download="Gayatri_Kamdar_Resume.pdf" class="btn-download">
                 <i data-lucide="download"></i>
                 Download Resume PDF
@@ -182,7 +198,7 @@
               <ul>
                 <li>Worked closely with the Business Development (BD) team to support brand growth.</li>
                 <li>Conducted brand analysis of 7 competitors, covering positioning, messaging, pricing models, and service differentiation.</li>
-                <li>Handled large-scale Excel data (>10,000 rows) with dedicated cleaning and organization.</li>
+                <li>Handled large-scale Excel data (&gt;10,000 rows) with dedicated cleaning and organization.</li>
               </ul>
             </div>
           </div>
@@ -196,7 +212,7 @@
             </div>
             <div class="timeline-body">
               <ul>
-                <li>Automated Python data extraction & cleaning for lead analysis, cutting processing time by 50% and achieving 95%+ accuracy.</li>
+                <li>Automated Python data extraction &amp; cleaning for lead analysis, cutting processing time by 50% and achieving 95%+ accuracy.</li>
                 <li>Identified growth opportunities from analyzed data, generating 50-100+ high-potential leads.</li>
               </ul>
             </div>
@@ -206,261 +222,7 @@
       </div>
     </div>
 
-    <!-- 3. PROJECTS WINDOW -->
-    <div class="window" id="projects-win" style="top: 8%; left: 38%;">
-      <div class="title-bar">
-        <div class="window-controls">
-          <span class="control-btn close" data-window="projects-win"></span>
-          <span class="control-btn minimize" data-window="projects-win"></span>
-          <span class="control-btn maximize" data-window="projects-win"></span>
-        </div>
-        <div class="title-text">PROJECTS.IDX</div>
-      </div>
-      <div class="window-content">
-        <h2 class="section-title">Projects & Skills</h2>
-        
-        <div class="project-grid">
-          
-          <div class="project-card featured">
-            <div class="project-tag">RESEARCH &amp; ML PLATFORM</div>
-            <h3>Rahi: Roommate Compatibility Prediction</h3>
-            <p>Hybrid Machine Learning &amp; NLP framework predicting roommate compatibility using Big Five personality traits and BERT embeddings. Evaluated 5 model architectures achieving 86% accuracy.</p>
-            <div style="margin-top: 10px; display: flex; gap: 10px;">
-              <button class="btn-download" data-window="research-win" onclick="const win = document.getElementById('research-win'); if(win){ win.classList.add('visible'); win.classList.add('active'); if(window.bringToFront) window.bringToFront(win); }" style="padding: 4px 10px; font-size: 11px; cursor: pointer; border: none;">
-                <i data-lucide="flask-conical" style="width: 12px; height: 12px;"></i> View Full Research Paper
-              </button>
-              <a href="https://github.com/ginny212/roommate-compatibility" target="_blank" style="font-family: var(--font-mono); font-size: 11px; display: inline-flex; align-items: center; gap: 4px;">
-                <i data-lucide="github" style="width: 12px; height: 12px;"></i> Repository
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-tag">PM INITIATIVE</div>
-            <h3>Cityfurnish Homepage Re-design</h3>
-            <p>Redesigned the core rental homepage in Figma to optimize user navigation and booking flows. Key highlights:</p>
-            <ul>
-              <li>Conducted heuristic evaluations to restructure homepage layout, categorized inventory, and localized filters.</li>
-              <li>Built interactive high-fidelity prototypes mapping user journeys from initial discovery to cart conversion.</li>
-            </ul>
-            <div style="margin-top: 10px;">
-              <a href="https://www.figma.com/make/wHmNKr6CmiJTdmt5R06mkk/Replicate-Existing-Design?t=LCnQBzjOf1t08bEe-0&amp;fullscreen=1" target="_blank" style="font-family: var(--font-mono); font-size: 11px; display: inline-flex; align-items: center; gap: 4px;">
-                <i data-lucide="external-link" style="width: 12px; height: 12px;"></i> View Figma Design
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-tag">AI & AUTOMATION</div>
-            <h3>Jobber Autonomous Job Application Agent</h3>
-            <p>An autonomous AI agent system designed to search and apply for relevant jobs on the internet by controlling the browser in the background. Key highlights:</p>
-            <ul>
-              <li>Built on the Sentient framework utilizing LLM-based planning and browser control.</li>
-              <li>Implements multi-agent conversations between planner and browser agents, including a Finite State Machine (FSM) implementation.</li>
-            </ul>
-            <div style="margin-top: 10px;">
-              <a href="https://github.com/ginny212/Gayatri-Projects/tree/main/Jobber-Agent-System" target="_blank" style="font-family: var(--font-mono); font-size: 11px; display: inline-flex; align-items: center; gap: 4px;">
-                <i data-lucide="github" style="width: 12px; height: 12px;"></i> View GitHub Repository
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-tag">DATA SCIENCE</div>
-            <h3>Tesla Stock Prediction</h3>
-            <p>Time-series forecasting with Facebook Prophet, achieving ~15% lower MAE/RMSE on historical data.</p>
-            <div style="margin-top: 10px;">
-              <a href="https://github.com/ginny212/Gayatri-Projects/tree/main/Tesla-Stock-Prediction" target="_blank" style="font-family: var(--font-mono); font-size: 11px; display: inline-flex; align-items: center; gap: 4px;">
-                <i data-lucide="github" style="width: 12px; height: 12px;"></i> View GitHub Repository
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-tag">FINANCIAL ANALYSIS</div>
-            <h3>Financial Debt Repayment Models</h3>
-            <p>Interactive scenarios and optimization models for analyzing alternative debt repayment structures, built during Inddhan internship. Key highlights:</p>
-            <ul>
-              <li>Created loan payment schedules evaluating interest rates, terms, and repayment strategies.</li>
-              <li>Helped analyze scenarios to reduce repayment time and optimize cost of interest for borrowers.</li>
-            </ul>
-            <div style="margin-top: 10px;">
-              <a href="https://github.com/ginny212/Gayatri-Projects/tree/main/Financial-Debt-Models" target="_blank" style="font-family: var(--font-mono); font-size: 11px; display: inline-flex; align-items: center; gap: 4px;">
-                <i data-lucide="github" style="width: 12px; height: 12px;"></i> View GitHub Repository
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-tag">PYTHON SCRIPT</div>
-            <h3>ReportLab ATS Resume Builder</h3>
-            <p>A custom Python generation tool leveraging ReportLab to build high-quality, ATS-friendly professional resumes. Key highlights:</p>
-            <ul>
-              <li>Generates custom typography and layout flowables configured precisely for single-page resume constraints.</li>
-              <li>Implements modern, clean color palettes and clean section layouts automatically.</li>
-            </ul>
-            <div style="margin-top: 10px;">
-              <a href="https://github.com/ginny212/Gayatri-Projects/tree/main/Resume-Builder" target="_blank" style="font-family: var(--font-mono); font-size: 11px; display: inline-flex; align-items: center; gap: 4px;">
-                <i data-lucide="github" style="width: 12px; height: 12px;"></i> View GitHub Repository
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <h3>Electronic Sales Dashboard</h3>
-            <p>Built real-time Tableau dashboards to track sales trends, performance metrics, and support data-driven business decisions.</p>
-          </div>
-
-          <div class="project-card">
-            <h3>Wine Data Analysis</h3>
-            <p>Automated spreadsheets improving data management, validation rules, and entry accuracy in Excel.</p>
-          </div>
-
-        </div>
-
-        <h3 class="skill-title">Technical Projects & Skills</h3>
-        <div class="skill-categories">
-          <div class="skill-category">
-            <h4>Analytics & Technical</h4>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">SQL</span>
-              <span class="tag">Power BI</span>
-              <span class="tag">Advanced Excel</span>
-              <span class="tag">Data Analytics</span>
-              <span class="tag">Dashboard Development</span>
-              <span class="tag">Data Visualization</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h4>Business & Strategy</h4>
-            <div class="tags">
-              <span class="tag">Business Analysis</span>
-              <span class="tag">Market Research</span>
-              <span class="tag">Competitive Intelligence</span>
-              <span class="tag">Growth Analysis</span>
-              <span class="tag">Data Storytelling</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h4>Core Strengths</h4>
-            <div class="tags">
-              <span class="tag">Ownership</span>
-              <span class="tag">Structured Thinking</span>
-              <span class="tag">Execution</span>
-              <span class="tag">Adaptability</span>
-              <span class="tag">Cross-Functional Collaboration</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- 4. QUALIFICATIONS (EDUCATION) WINDOW -->
-    <div class="window" id="qualifications-win" style="top: 15%; left: 24%;">
-      <div class="title-bar">
-        <div class="window-controls">
-          <span class="control-btn close" data-window="qualifications-win"></span>
-          <span class="control-btn minimize" data-window="qualifications-win"></span>
-          <span class="control-btn maximize" data-window="qualifications-win"></span>
-        </div>
-        <div class="title-text">QUALIFICATIONS.VOL</div>
-      </div>
-      <div class="window-content">
-        <h2 class="section-title">Education & Credentials</h2>
-        
-        <div class="edu-section">
-          <div class="edu-item">
-            <div class="edu-header">
-              <h3>B.Sc. Data Science & Business Analytics</h3>
-              <span class="edu-meta">HSNC University Mumbai | 2022 — 2025</span>
-            </div>
-            <p>Science Honours Program | CGPA: 7.7/10</p>
-          </div>
-          <div class="edu-item">
-            <div class="edu-header">
-              <h3>Senior Secondary (Class XII)</h3>
-              <span class="edu-meta">Kesharbai Lahoti Mahavidyalaya | 89%</span>
-            </div>
-          </div>
-          <div class="edu-item">
-            <div class="edu-header">
-              <h3>Secondary (Class X ICSE)</h3>
-              <span class="edu-meta">Tomoae Primary English Medium School | 77.7%</span>
-            </div>
-          </div>
-        </div>
-
-        <h3 class="skill-title">Certifications</h3>
-        <ul class="cert-list">
-          <li>
-            <strong>IBM AI Engineering Professional Certificate:</strong> Deploying and scaling ML/deep learning models (TensorFlow, PyTorch, Spark).
-          </li>
-          <li>
-            <strong>British Airways Data Science (Forage):</strong> Python sentiment & exploratory analysis of airline reviews.
-          </li>
-          <li>
-            <strong>Certified Data Scientist (Udemy Bootcamp):</strong> ML, cross-validation, hyperparameter tuning, data cleaning.
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- 5. VIDEO (CREATIVE) WINDOW -->
-    <div class="window" id="video-win" style="top: 20%; left: 30%;">
-      <div class="title-bar">
-        <div class="window-controls">
-          <span class="control-btn close" data-window="video-win"></span>
-          <span class="control-btn minimize" data-window="video-win"></span>
-          <span class="control-btn maximize" data-window="video-win"></span>
-        </div>
-        <div class="title-text">VIDEO.SYS</div>
-      </div>
-      <div class="window-content">
-        <h2 class="section-title">Media & Extracurriculars</h2>
-
-        <div class="media-container">
-          <!-- Mock Video Player Interface -->
-          <div class="mock-player">
-            <div class="player-screen">
-              <div class="play-overlay">
-                <i data-lucide="play-circle" class="play-btn-large"></i>
-                <p>Play Demo Video</p>
-              </div>
-              <div class="player-title-overlay">Roommate Compatibility Engine Showcase</div>
-            </div>
-            <div class="player-controls">
-              <button class="player-btn"><i data-lucide="play" class="icon-small"></i></button>
-              <div class="progress-bar">
-                <div class="progress-filled" style="width: 35%;"></div>
-              </div>
-              <span class="time-display">01:14 / 03:30</span>
-              <button class="player-btn"><i data-lucide="volume-2" class="icon-small"></i></button>
-            </div>
-          </div>
-        </div>
-
-        <div class="creative-grid">
-          <div class="creative-card">
-            <h4><i data-lucide="trophy"></i> Sports & Athleticism</h4>
-            <p>Women's Cricket Team All-rounder for HSNC University.</p>
-          </div>
-          <div class="creative-card">
-            <h4><i data-lucide="palette"></i> Design & Aesthetics</h4>
-            <p>Diploma in Interior Design. Focus on spatial layouts, ergonomics, and visual harmony.</p>
-          </div>
-          <div class="creative-card">
-            <h4><i data-lucide="music"></i> Creative Expressions</h4>
-            <p>Guitar performances & acoustic arrangements.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  
-    
-    <!-- RESEARCH WINDOW -->
+    <!-- 3. RESEARCH WINDOW -->
     <div class="window active" id="research-win" style="top: 8%; left: 20%;">
       <div class="title-bar">
         <div class="window-controls">
@@ -689,7 +451,212 @@
 
       </div>
     </div>
-</main>
+
+    <!-- 4. PROJECTS WINDOW -->
+    <div class="window" id="projects-win" style="top: 8%; left: 38%;">
+      <div class="title-bar">
+        <div class="window-controls">
+          <span class="control-btn close" data-window="projects-win"></span>
+          <span class="control-btn minimize" data-window="projects-win"></span>
+          <span class="control-btn maximize" data-window="projects-win"></span>
+        </div>
+        <div class="title-text">PROJECTS.IDX</div>
+      </div>
+      <div class="window-content">
+        <h2 class="section-title">Projects &amp; Skills</h2>
+        
+        <div class="project-grid">
+          
+          <div class="project-card featured">
+            <div class="project-tag">RESEARCH INITIATIVE</div>
+            <h3>Rahi: Roommate Compatibility Prediction Using BERT &amp; Ensemble Learning</h3>
+            <p>A Hybrid Approach to Personality Trait Prediction and Compatibility Classification (Gayatri Kamdar · Jigyaasa Science Honors Program · HSNC University, Mumbai).</p>
+            <ul>
+              <li>Combines 1,500 anonymized structured lifestyle attributes with free-text BERT embeddings.</li>
+              <li>Predicts Big Five personality traits (Agreeableness, Conscientiousness, Openness, Extraversion, Neuroticism).</li>
+              <li>Evaluated 5 model architectures achieving peak F1-score of 0.85 (Random Forest) and 0.83 (BERT).</li>
+              <li>Deployed production Flask web application with ROC curves, feature importance charts, and confusion matrices.</li>
+            </ul>
+            <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+              <button onclick="const win = document.getElementById('research-win'); if(win){ win.classList.add('visible'); win.classList.add('active'); if(window.bringToFront) window.bringToFront(win); }" style="background: #0284c7; color: white; border: none; padding: 6px 12px; border-radius: 4px; font-family: var(--font-mono); font-size: 11px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+                <i data-lucide="flask-conical" style="width: 13px; height: 13px;"></i> Read Full Paper Window
+              </button>
+              <a href="https://github.com/ginny212/roommate-compatibility" target="_blank" style="font-family: var(--font-mono); font-size: 11px; display: inline-flex; align-items: center; gap: 4px; color: #0284c7; font-weight: 600;">
+                <i data-lucide="github" style="width: 13px; height: 13px;"></i> GitHub Repo
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-tag">PM INITIATIVE</div>
+            <h3>Cityfurnish Homepage Re-design</h3>
+            <p>Redesigned the core rental homepage in Figma to optimize user navigation and booking flows. Key highlights:</p>
+            <ul>
+              <li>Conducted heuristic evaluations to restructure homepage layout, categorized inventory, and localized filters.</li>
+              <li>Built interactive high-fidelity prototypes mapping user journeys from initial discovery to cart conversion.</li>
+            </ul>
+            <div style="margin-top: 10px;">
+              <a href="https://www.figma.com/make/wHmNKr6CmiJTdmt5R06mkk/Replicate-Existing-Design?t=LCnQBzjOf1t08bEe-0&amp;fullscreen=1" target="_blank" style="font-family: var(--font-mono); font-size: 11px; display: inline-flex; align-items: center; gap: 4px;">
+                <i data-lucide="external-link" style="width: 12px; height: 12px;"></i> View Figma Design
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>Electronic Sales Dashboard</h3>
+            <p>Built real-time Tableau dashboards to track sales trends, performance metrics, and support data-driven business decisions.</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Wine Data Analysis</h3>
+            <p>Automated spreadsheets improving data management, validation rules, and entry accuracy in Excel.</p>
+          </div>
+
+        </div>
+
+        <h3 class="skill-title">Technical Projects &amp; Skills</h3>
+        <div class="skill-categories">
+          <div class="skill-category">
+            <h4>Analytics &amp; Technical</h4>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">BERT / NLP</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Advanced Excel</span>
+              <span class="tag">Data Analytics</span>
+              <span class="tag">Dashboard Development</span>
+              <span class="tag">Data Visualization</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Business &amp; Strategy</h4>
+            <div class="tags">
+              <span class="tag">Business Analysis</span>
+              <span class="tag">Market Research</span>
+              <span class="tag">Competitive Intelligence</span>
+              <span class="tag">Growth Analysis</span>
+              <span class="tag">Data Storytelling</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Core Strengths</h4>
+            <div class="tags">
+              <span class="tag">Ownership</span>
+              <span class="tag">Structured Thinking</span>
+              <span class="tag">Execution</span>
+              <span class="tag">Adaptability</span>
+              <span class="tag">Cross-Functional Collaboration</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 5. QUALIFICATIONS (EDUCATION) WINDOW -->
+    <div class="window" id="qualifications-win" style="top: 15%; left: 24%;">
+      <div class="title-bar">
+        <div class="window-controls">
+          <span class="control-btn close" data-window="qualifications-win"></span>
+          <span class="control-btn minimize" data-window="qualifications-win"></span>
+          <span class="control-btn maximize" data-window="qualifications-win"></span>
+        </div>
+        <div class="title-text">QUALIFICATIONS.VOL</div>
+      </div>
+      <div class="window-content">
+        <h2 class="section-title">Education &amp; Credentials</h2>
+        
+        <div class="edu-section">
+          <div class="edu-item">
+            <div class="edu-header">
+              <h3>B.Sc. Data Science &amp; Business Analytics</h3>
+              <span class="edu-meta">HSNC University Mumbai | 2022 — 2025</span>
+            </div>
+            <p>Science Honours Program | CGPA: 7.7/10</p>
+          </div>
+          <div class="edu-item">
+            <div class="edu-header">
+              <h3>Senior Secondary (Class XII)</h3>
+              <span class="edu-meta">Kesharbai Lahoti Mahavidyalaya | 89%</span>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-header">
+              <h3>Secondary (Class X ICSE)</h3>
+              <span class="edu-meta">Tomoae Primary English Medium School | 77.7%</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="skill-title">Certifications</h3>
+        <ul class="cert-list">
+          <li>
+            <strong>IBM AI Engineering Professional Certificate:</strong> Deploying and scaling ML/deep learning models (TensorFlow, PyTorch, Spark).
+          </li>
+          <li>
+            <strong>British Airways Data Science (Forage):</strong> Python sentiment &amp; exploratory analysis of airline reviews.
+          </li>
+          <li>
+            <strong>Certified Data Scientist (Udemy Bootcamp):</strong> ML, cross-validation, hyperparameter tuning, data cleaning.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 6. VIDEO (CREATIVE) WINDOW -->
+    <div class="window" id="video-win" style="top: 20%; left: 30%;">
+      <div class="title-bar">
+        <div class="window-controls">
+          <span class="control-btn close" data-window="video-win"></span>
+          <span class="control-btn minimize" data-window="video-win"></span>
+          <span class="control-btn maximize" data-window="video-win"></span>
+        </div>
+        <div class="title-text">VIDEO.SYS</div>
+      </div>
+      <div class="window-content">
+        <h2 class="section-title">Media &amp; Extracurriculars</h2>
+
+        <div class="media-container">
+          <!-- Mock Video Player Interface -->
+          <div class="mock-player">
+            <div class="player-screen">
+              <div class="play-overlay">
+                <i data-lucide="play-circle" class="play-btn-large"></i>
+                <p>Play Demo Video</p>
+              </div>
+              <div class="player-title-overlay">Roommate Compatibility Engine Showcase</div>
+            </div>
+            <div class="player-controls">
+              <button class="player-btn"><i data-lucide="play" class="icon-small"></i></button>
+              <div class="progress-bar">
+                <div class="progress-filled" style="width: 35%;"></div>
+              </div>
+              <span class="time-display">01:14 / 03:30</span>
+              <button class="player-btn"><i data-lucide="volume-2" class="icon-small"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="creative-grid">
+          <div class="creative-card">
+            <h4><i data-lucide="trophy"></i> Sports &amp; Athleticism</h4>
+            <p>Women's Cricket Team All-rounder for HSNC University.</p>
+          </div>
+          <div class="creative-card">
+            <h4><i data-lucide="palette"></i> Design &amp; Aesthetics</h4>
+            <p>Diploma in Interior Design. Focus on spatial layouts, ergonomics, and visual harmony.</p>
+          </div>
+          <div class="creative-card">
+            <h4><i data-lucide="music"></i> Creative Expressions</h4>
+            <p>Guitar performances &amp; acoustic arrangements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
 
   <!-- Bottom OS Dock -->
   <footer class="dock-container">
