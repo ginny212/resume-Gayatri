@@ -280,7 +280,8 @@ document.addEventListener('DOMContentLoaded', () => {
       'qualifications-win': { top: '15%', left: '24%' },
       'projects-win': { top: '8%', left: '38%' },
       'track-record-win': { top: '12%', left: '28%' },
-      'video-win': { top: '20%', left: '30%' }
+      'video-win': { top: '20%', left: '30%' },
+      'research-win': { top: '8%', left: '20%' }
     };
 
     windows.forEach(win => {

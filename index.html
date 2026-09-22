@@ -25,6 +25,7 @@
       <nav class="bar-nav">
         <button class="nav-item" data-window="identity-win" id="nav-identity">Identity</button>
         <button class="nav-item" data-window="qualifications-win" id="nav-qualifications">Qualifications</button>
+        <button class="nav-item" data-window="research-win" id="nav-research">Research</button>
         <button class="nav-item" data-window="projects-win" id="nav-projects">Projects</button>
         <button class="nav-item" data-window="track-record-win" id="nav-track-record">Track Record</button>
         <button class="nav-item" data-window="video-win" id="nav-video">Video</button>
@@ -98,7 +99,7 @@
           </div>
           <div class="profile-body">
             <h3>Profile Summary</h3>
-            <p>Product-minded operator with experience across analytics, market research, and business strategy. Led the end-to-end development of an AI-powered roommate compatibility platform, from user research and data collection to product design and deployment. Brings a combination of analytical rigor, ownership, and execution, with experience solving unstructured problems and driving initiatives independently.</p>
+            <p>Product-minded operator with experience across analytics, market research, and business strategy. Developed Rahi, an AI-powered roommate compatibility platform and NLP/BERT research model, by combining user research, behavioral analytics, and ensemble machine learning. Brings a combination of analytical rigor, ownership, and execution, with experience solving unstructured problems and driving initiatives independently.</p>
             
             <h3>Contact Information</h3>
             <ul class="contact-list">
@@ -221,17 +222,15 @@
         <div class="project-grid">
           
           <div class="project-card featured">
-            <div class="project-tag">FEATURED INITIATIVE</div>
-            <h3>AI-Powered Roommate Compatibility Platform</h3>
-            <p>Designed and developed an end-to-end roommate compatibility platform addressing compatibility challenges in shared housing. Key highlights:</p>
-            <ul>
-              <li>Built a personality prediction framework leveraging NLP techniques to generate compatibility insights from user descriptions.</li>
-              <li>Developed a hybrid recommendation engine combining structured attributes, behavioral patterns, and personality signals.</li>
-              <li>Led the complete product lifecycle: research, data collection, feature prioritization, model development (K-Means + BERT), testing, and deployment.</li>
-            </ul>
-            <div style="margin-top: 10px;">
-              <a href="https://github.com/ginny212/Gayatri-Projects/tree/main/Roommate-Matching-System" target="_blank" style="font-family: var(--font-mono); font-size: 11px; display: inline-flex; align-items: center; gap: 4px;">
-                <i data-lucide="github" style="width: 12px; height: 12px;"></i> View GitHub Repository
+            <div class="project-tag">RESEARCH &amp; ML PLATFORM</div>
+            <h3>Rahi: Roommate Compatibility Prediction</h3>
+            <p>Hybrid Machine Learning &amp; NLP framework predicting roommate compatibility using Big Five personality traits and BERT embeddings. Evaluated 5 model architectures achieving 86% accuracy.</p>
+            <div style="margin-top: 10px; display: flex; gap: 10px;">
+              <button class="btn-download" data-window="research-win" onclick="const win = document.getElementById('research-win'); if(win){ win.classList.add('visible'); win.classList.add('active'); if(window.bringToFront) window.bringToFront(win); }" style="padding: 4px 10px; font-size: 11px; cursor: pointer; border: none;">
+                <i data-lucide="flask-conical" style="width: 12px; height: 12px;"></i> View Full Research Paper
+              </button>
+              <a href="https://github.com/ginny212/roommate-compatibility" target="_blank" style="font-family: var(--font-mono); font-size: 11px; display: inline-flex; align-items: center; gap: 4px;">
+                <i data-lucide="github" style="width: 12px; height: 12px;"></i> Repository
               </a>
             </div>
           </div>
@@ -459,7 +458,238 @@
       </div>
     </div>
 
-  </main>
+  
+    
+    <!-- RESEARCH WINDOW -->
+    <div class="window active" id="research-win" style="top: 8%; left: 20%;">
+      <div class="title-bar">
+        <div class="window-controls">
+          <span class="control-btn close" data-window="research-win"></span>
+          <span class="control-btn minimize" data-window="research-win"></span>
+          <span class="control-btn maximize" data-window="research-win"></span>
+        </div>
+        <div class="title-text">RESEARCH_RAHI.SYS</div>
+      </div>
+      <div class="window-content" style="padding: 24px;">
+        <!-- Header Section -->
+        <div class="research-hero">
+          <div style="font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; color: #38bdf8; font-weight: 600; margin-bottom: 4px;">Research Project · Rahi</div>
+          <h2>Roommate Compatibility Prediction Using BERT and Ensemble Learning</h2>
+          <p class="subtitle">A Hybrid Approach to Personality Trait Prediction and Compatibility Classification</p>
+          <div class="research-author">
+            <span><strong>Gayatri Kamdar</strong></span>
+            <span>·</span>
+            <span>Jigyaasa Science Honors Program</span>
+            <span>·</span>
+            <span>HSNC University, Mumbai</span>
+          </div>
+          <div class="research-meta-tags">
+            <span class="research-tag">Machine Learning</span>
+            <span class="research-tag">NLP</span>
+            <span class="research-tag">Behavioral Analytics</span>
+            <span class="research-tag">Personality Prediction</span>
+          </div>
+          <div class="research-action-bar">
+            <a href="https://github.com/ginny212/roommate-compatibility" target="_blank" class="research-btn research-btn-primary">
+              <i data-lucide="github" style="width: 14px; height: 14px;"></i> GitHub Repository
+            </a>
+            <a href="https://github.com/ginny212/roommate-compatibility" target="_blank" class="research-btn research-btn-outline">
+              <i data-lucide="external-link" style="width: 14px; height: 14px;"></i> View Application
+            </a>
+          </div>
+        </div>
+
+        <!-- Overview -->
+        <h3 class="section-title">Overview</h3>
+        <p>The rise of shared accommodation in Mumbai has created a need for better roommate-matching systems. Traditional approaches such as manual surveys, interviews, or random assignment often focus on basic preferences and demographics, while roommate compatibility can also depend on behavioral and lifestyle factors such as sleep schedules, cleanliness, budget, smoking habits, and social preferences.</p>
+        <p style="margin-top: 10px;">This research investigates whether structured lifestyle data and unstructured textual descriptions can be combined to predict roommate compatibility.</p>
+        <p style="margin-top: 10px;">The study uses 1,500 anonymized survey responses collected through digital forms circulated among Mumbai colleges and shared-living platforms. The dataset combines structured attributes—including age, occupation, sleep schedule, cleanliness, rent budget, and smoking habits—with lifestyle descriptions, hobbies, and self-assessments.</p>
+
+        <!-- Research Question -->
+        <div class="research-callout">
+          <h4><i data-lucide="help-circle" style="width: 14px; height: 14px;"></i> Research Question</h4>
+          <p>Can structured lifestyle and behavioral attributes combined with textual descriptions be used to predict roommate compatibility?</p>
+          <p style="margin-top: 6px; font-style: normal; font-size: 12.5px; color: #334155;">The research also investigates whether personality traits can be inferred from lifestyle descriptions and subsequently used to improve compatibility classification.</p>
+        </div>
+
+        <!-- Methodology -->
+        <h3 class="section-title">Methodology</h3>
+        <p>The system follows a hybrid pipeline:</p>
+        <div class="pipeline-grid">
+          <div class="pipeline-card">Survey Data</div>
+          <div class="pipeline-card">Preprocessing</div>
+          <div class="pipeline-card highlight">Personality Trait Prediction</div>
+          <div class="pipeline-card">Feature Integration</div>
+          <div class="pipeline-card highlight">Compatibility Classification</div>
+          <div class="pipeline-card">Flask Deployment</div>
+        </div>
+        <p style="margin-top: 10px;">Structured data was processed using missing-value imputation, one-hot encoding, and standard scaling. Textual responses were tokenized using BERT's tokenizer, with padding and truncation to 50 tokens.</p>
+
+        <!-- Personality Trait Prediction -->
+        <h3 class="section-title">Personality Trait Prediction</h3>
+        <p>The system predicts the Big Five personality traits:</p>
+        <div class="trait-pill-container">
+          <span class="trait-pill">Agreeableness</span>
+          <span class="trait-pill">Conscientiousness</span>
+          <span class="trait-pill">Openness</span>
+          <span class="trait-pill">Extraversion</span>
+          <span class="trait-pill">Neuroticism</span>
+        </div>
+        <p style="margin-top: 10px;">For textual lifestyle descriptions, Bi-LSTM and BERT were used to extract personality-related signals. Random Forest was used to infer personality traits from structured information. The resulting five-dimensional personality representation was then combined with the original input features.</p>
+
+        <!-- Compatibility Classification -->
+        <h3 class="section-title">Compatibility Classification</h3>
+        <p>Five models were evaluated:</p>
+
+        <div class="research-table-container">
+          <table class="research-table">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Logistic Regression</strong></td>
+                <td>Baseline and interpretability</td>
+              </tr>
+              <tr>
+                <td><strong>Random Forest</strong></td>
+                <td>Nonlinear structured-data relationships</td>
+              </tr>
+              <tr>
+                <td><strong>SVM</strong></td>
+                <td>High-dimensional classification</td>
+              </tr>
+              <tr>
+                <td><strong>Bi-LSTM</strong></td>
+                <td>Sequential text representation</td>
+              </tr>
+              <tr>
+                <td><strong>BERT</strong></td>
+                <td>Contextual semantic representation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="margin-top: 10px;">Random Forest was configured with 100 trees and maximum depth 5, while BERT used the bert-base-uncased architecture and [CLS] embeddings for downstream classification.</p>
+
+        <!-- Results -->
+        <h3 class="section-title">Results</h3>
+        <h4 style="font-family: var(--font-mono); font-size: 13px; color: #0f172a; margin-bottom: 8px;">Compatibility Classification</h4>
+
+        <div class="research-table-container">
+          <table class="research-table">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th style="text-align: center;">Accuracy</th>
+                <th style="text-align: center;">Precision</th>
+                <th style="text-align: center;">Recall</th>
+                <th style="text-align: center;">F1</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Logistic Regression</strong></td>
+                <td style="text-align: center;">0.78</td>
+                <td style="text-align: center;">0.76</td>
+                <td style="text-align: center;">0.79</td>
+                <td style="text-align: center;">0.77</td>
+              </tr>
+              <tr>
+                <td><strong>SVM</strong></td>
+                <td style="text-align: center;">0.81</td>
+                <td style="text-align: center;">0.80</td>
+                <td style="text-align: center;">0.81</td>
+                <td style="text-align: center;">0.80</td>
+              </tr>
+              <tr>
+                <td><strong>Bi-LSTM</strong></td>
+                <td style="text-align: center;">0.83</td>
+                <td style="text-align: center;">0.82</td>
+                <td style="text-align: center;">0.83</td>
+                <td style="text-align: center;">0.82</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>BERT</strong></td>
+                <td style="text-align: center;">0.84</td>
+                <td style="text-align: center;">0.83</td>
+                <td style="text-align: center;">0.84</td>
+                <td style="text-align: center;"><strong>0.83</strong></td>
+              </tr>
+              <tr class="highlight-row" style="background: #e0f2fe;">
+                <td><strong>Random Forest ★</strong></td>
+                <td style="text-align: center;"><strong>0.86</strong></td>
+                <td style="text-align: center;">0.85</td>
+                <td style="text-align: center;">0.86</td>
+                <td style="text-align: center;"><strong>0.85</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="margin-top: 10px;">Random Forest achieved the highest reported F1-score for compatibility classification at 0.85, while BERT achieved 0.83.</p>
+
+        <p style="margin-top: 10px;">For personality-trait prediction, the reported results included:</p>
+        <ul style="margin-left: 20px; margin-top: 6px; line-height: 1.6; color: #334155;">
+          <li><strong>BERT — Agreeableness:</strong> F1 0.82</li>
+          <li><strong>Bi-LSTM — Openness:</strong> F1 0.81</li>
+          <li><strong>Random Forest — Conscientiousness:</strong> F1 0.80</li>
+        </ul>
+
+        <p style="margin-top: 10px;">Five-fold cross-validation showed relatively consistent model performance, with Random Forest ranging from 0.84–0.86 and BERT from 0.82–0.84 across the reported folds.</p>
+
+        <!-- What the Results Suggest -->
+        <h3 class="section-title">What the Results Suggest</h3>
+        <p>The experiments show different strengths across the models.</p>
+        <p style="margin-top: 10px;">Random Forest performed strongly on structured data and provided feature-importance information. The analysis identified variables such as budget and sleep schedule among important predictors.</p>
+        <p style="margin-top: 10px;">BERT captured contextual information from free-text lifestyle descriptions, allowing the system to incorporate behavioral and personality-related cues that are difficult to represent through predefined categories.</p>
+        <p style="margin-top: 10px;">This supports the use of a hybrid approach in which structured behavioral information and textual information contribute different types of signals to the compatibility prediction.</p>
+
+        <!-- From Research to Application -->
+        <h3 class="section-title">From Research to Application</h3>
+        <p>The final pipeline was deployed as a Flask web application.</p>
+        <p style="margin-top: 10px;">Users provide structured survey responses and free-text lifestyle descriptions. The system processes the input, predicts personality traits, performs compatibility classification, and returns a compatibility prediction with probability information and visual outputs.</p>
+        <p style="margin-top: 10px;">The application also generates:</p>
+        <ul style="margin-left: 20px; margin-top: 6px; line-height: 1.6; color: #334155;">
+          <li>Feature-importance visualizations</li>
+          <li>Confusion matrices</li>
+          <li>ROC curves</li>
+          <li>Personality-trait summaries</li>
+        </ul>
+        <p style="margin-top: 10px;">The research therefore moves from data collection → model development → evaluation → deployment rather than stopping at model experimentation.</p>
+
+        <!-- Limitations & Future Work -->
+        <h3 class="section-title">Limitations &amp; Future Work</h3>
+        <p>The study is based on self-reported survey data, and compatibility is inherently subjective and context-dependent. The 1,500-response dataset also limits the extent to which the results can be generalized to other populations.</p>
+        <p style="margin-top: 10px;">Future work could include larger datasets, real-time learning from user feedback, longitudinal validation using actual roommate outcomes, multimodal inputs, newer transformer architectures such as RoBERTa and DeBERTa, and evaluation across additional cities and housing platforms.</p>
+
+        <!-- Conclusion -->
+        <h3 class="section-title">Conclusion</h3>
+        <p>This research developed a hybrid machine-learning framework for roommate compatibility prediction by combining structured behavioral information, personality-trait prediction, and natural-language processing.</p>
+        <p style="margin-top: 10px;">The results demonstrate that different model architectures capture different aspects of the problem, with Random Forest performing strongly on structured data and BERT providing contextual representations of lifestyle descriptions.</p>
+        <p style="margin-top: 10px;">The resulting Flask application demonstrates how this research can be translated into a practical compatibility-matching system for shared living environments.</p>
+
+        <!-- Research Links -->
+        <h3 class="section-title">Research Links</h3>
+        <div style="display: flex; gap: 12px; margin-top: 10px; flex-wrap: wrap;">
+          <a href="https://github.com/ginny212/roommate-compatibility" target="_blank" class="research-btn research-btn-primary">
+            <i data-lucide="file-text" style="width: 14px; height: 14px;"></i> Read Full Paper
+          </a>
+          <a href="https://github.com/ginny212/roommate-compatibility" target="_blank" class="research-btn research-btn-outline" style="color: #0f172a; border-color: #cbd5e1;">
+            <i data-lucide="github" style="width: 14px; height: 14px;"></i> GitHub
+          </a>
+          <a href="https://github.com/ginny212/roommate-compatibility" target="_blank" class="research-btn research-btn-outline" style="color: #0f172a; border-color: #cbd5e1;">
+            <i data-lucide="external-link" style="width: 14px; height: 14px;"></i> View Application
+          </a>
+        </div>
+
+      </div>
+    </div>
+</main>
 
   <!-- Bottom OS Dock -->
   <footer class="dock-container">
@@ -471,6 +701,10 @@
       <button class="dock-item" data-window="qualifications-win" title="Qualifications">
         <i data-lucide="book-open"></i>
         <span class="tooltip">Qualifications</span>
+      </button>
+      <button class="dock-item" data-window="research-win" title="Research">
+        <i data-lucide="flask-conical"></i>
+        <span class="tooltip">Research</span>
       </button>
       <button class="dock-item" data-window="projects-win" title="Projects">
         <i data-lucide="folder-git-2"></i>
